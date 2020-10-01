@@ -52,10 +52,10 @@ $('.prices-info__doctor-btn').click(function() {
   $('.prices-info__doctor-btn--active').removeClass('prices-info__doctor-btn--active');
   $(this).addClass('prices-info__doctor-btn--active');
   // заголовок
-  $('.title-shadow__title-text').fadeOut(0).text('').append($(this).text());
-  $('.title-shadow__title-text').fadeIn(200);
-  $('.title-shadow__shadow-text').fadeOut(0).text('').append($(this).text());
-  $('.title-shadow__shadow-text').fadeIn(300);
+  $('.title-shadow--mod .title-shadow__title-text').fadeOut(0).text('').append($(this).text());
+  $('.title-shadow--mod .title-shadow__title-text').fadeIn(200);
+  $('.title-shadow--mod .title-shadow__shadow-text').fadeOut(0).text('').append($(this).text());
+  $('.title-shadow--mod .title-shadow__shadow-text').fadeIn(300);
   // переключение вкладок с ценой
   let doctor = $(this).data('doctor');
   $('.prices-info__list-item--active').fadeOut(0);
