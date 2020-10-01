@@ -4,653 +4,619 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="https://fonts.googleapis.com/css2?family=Bellota+Text:wght@300;400&family=Inter:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./select2/dist/css/select2.min.css">
+  <title>Sever</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./bootstrap-4.5.0-dist/css/bootstrap-grid.css">
   <link rel="stylesheet" href="./slick/slick.css">
   <link rel="stylesheet" href="./css/style.css">
-  <title>Document</title>
 </head>
 
 <body>
   <header class="header">
-    <div class="header__wrapper container">
-      <a href="index.html" class="header__logo">
-        <img src="./img/logo.png" width="133" height="33" class="header__logo-img" alt="header-logo">
+    <div class="header__wrapper">
+      <a href="#" class="header__logo">
+        <img src="./img/logo.png" height="44" width="134" class="header__logo-img" alt="logo">
       </a>
-      <nav class="header__navigation">
-        <ul class="header__navigation-list">
-          <li class="header__navigation-list-item">
-            <a href="about-project.html" class="header__navigation-link">
-              О проекте
+      <nav class="header__nav">
+        <ul class="header__nav-list">
+          <li class="header__nav-list-item header__nav-list-item--active">
+            <a href="index.html" class="header__nav-list-link">
+              Главная
             </a>
           </li>
-          <li class="header__navigation-list-item header__navigation-list-item--active">
-            <a href="index.html" class="header__navigation-link">
-              Грузы
+          <li class="header__nav-list-item">
+            <a href="laboratory.html" class="header__nav-list-link">
+              Лаборатория
             </a>
           </li>
-          <li class="header__navigation-list-item">
-            <a href="cargo-owners.html" class="header__navigation-link">
-              Грузовладельци
-            </a>
-          </li>
-          <li class="header__navigation-list-item header__navigation-list-item--services">
-            <a href="#" class="header__navigation-link">
-              Услуги
-            </a>
-            <button type="button" class="header__sub-list-btn"></button>
-            <ul class="header__sub-list">
-              <li class="header__sub-list-item">
-                <a href="partners.html" class="header__sub-list-link">
-                  Партнёры
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="bookkeeping.html" class="header__sub-list-link">
-                  Бухгалтерия, ЭДО
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Кредиты, лизинг
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Для банков
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Страховые компании
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Автосервисы
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Запчасти
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Покупка и продажа авто
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Топливные компании
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Аналитика
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Контроль и учёт зап. частей
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Инвестиции
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Факторинг
-                </a>
-              </li>
-              <li class="header__sub-list-item">
-                <a href="#" class="header__sub-list-link">
-                  Мониторинг транспорта по GPS
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="header__navigation-list-item">
-            <a href="info-page.html" class="header__navigation-link">
-              Информация
-            </a>
-          </li>
-          <li class="header__navigation-list-item">
-            <a href="vacancies.html" class="header__navigation-link">
-              Вакансии
-            </a>
-          </li>
-          <li class="header__navigation-list-item">
-            <a href="contacts.html" class="header__navigation-link">
-              Контакты
+          <li class="header__nav-list-item">
+            <a href="prices.html" class="header__nav-list-link">
+              Цены
             </a>
           </li>
         </ul>
       </nav>
-      <!-- модификатор залогиненого пользователя header__user--logged -->
-      <div class="header__user header__user--logged">
-        <ul class="header__user-list">
-          <li class="header__user-list-item">
-            <a class="header__user-link btn btn--transparent">
-              Вход
-            </a>
-          </li>
-          <li class="header__user-list-item">
-            <a class="header__user-link btn btn--brown">
-              Регистрация
-            </a>
-          </li>
-        </ul>
-        <div class="header__logged-block">
-          <div class="header__logged-icon">
-            <img src="./img/user-icon.png" height="33" width="33" alt="user-icon" class="header__logged-icon-img">
-          </div>
-          <p class="header__logged-name">
-            OOO Антонов М.И
-          </p>
-          <ul class="header__logged-list">
-            <li class="header__logged-list-item">
-              <a href="index-pa.html" class="header__logged-list-link">
-                В личный кабинет
-              </a>
-            </li>
-            <li class="header__logged-list-item">
-              <a href="subscription-pa.html" class="header__logged-list-link">
-                Избранное
-              </a>
-            </li>
-            <li class="header__logged-list-item">
-              <a href="" class="header__logged-list-link">
-                Выйти из системы
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <button class="header__mobile-btn header__mobile-btn--gamburger">
+      <a href="#" class="header__contact-us-btn btn">
+        Связвться с нами
+      </a>
+      <a class="header__mobile-btn">
         <span class="header__mobile-btn-decor"></span>
-      </button>
+      </a>
     </div>
   </header>
-  <main class="main-index">
-    <section class="present">
-      <div class="present__wrapper container">
-        <div class="present__slider-wrapper slider">
-          <div class="present__slide slider__item">
-            <b class="slider__item-title">Грузовладельцев</b>
-            <span class="slider__slogan">Зарегестрировано и проверено</span>
-            <span class="slider__count">29 431</span>
-          </div>
-          <div class="present__slide slider__item">
-            <b class="slider__item-title">Грузов</b>
-            <span class="slider__slogan">проверено</span>
-            <span class="slider__count">232 768</span>
-          </div>
-          <div class="present__slide slider__item">
-            <b class="slider__item-title">Перевозчиков</b>
-            <span class="slider__slogan">Зарегестрировано и проверено</span>
-            <span class="slider__count slider__count--blue">5 247</span>
-          </div>
-          <div class="present__slide slider__item">
-            <b class="slider__item-title">Автомобилей</b>
-            <span class="slider__slogan">Зарегестрировано и проверено</span>
-            <span class="slider__count slider__count--blue">17 867</span>
-          </div>
-        </div>
-        <div class="present__form-wrapper">
-          <h1 class="present__title big-title">
-            Грузоперевозки по России
-          </h1>
-          <p class="present__slogan">
-            Поиск по тендерной системе, тысячи предложений, лучшие условия,<br>
-            юридическое оформление.
-          </p>
-          <!-- модификатор активного состояния формы на мобильной версии present__form--active-->
-          <form class="present__form form">
-            <b class="present__form-mobile-title">Параметры поиска</b>
-            <b class="present__form-title">Поиск Грузов</b>
-            <div class="form__fieldset present__fieldset present__fieldset--location">
-              <h5 class="form__legend vis-hidd">Локация</h5>
-              <div class="present__form-wrapper-inner present__form-wrapper-inner--from">
-                <input type="text" class="present__text-input form__text-input" placeholder="Откуда">
-                <select class="present__form-select form__select" id="sel">
-                  <option class="present__select-option form__option" value="start">
-                    Из региона
-                  </option>
-                  <option class="present__select-option form__option" value="town">
-                    Харьков
-                  </option>
-                </select>
-                <select class="present__form-select form__select">
-                  <option class="present__select-option form__option" value="start">
-                    Из федерального округа
-                  </option>
-                  <option class="present__select-option form__option" value="region">
-                    Харьковский
-                  </option>
-                </select>
+  <main>
+    <div class="start-screen">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="start-scree__slider-wrapper">
+              <div class="start-screen__slide">
+                <div class="start-screen__slide-wrapper-inner">
+                  <h2 class="start-screen__title vis-hidd">
+                    Север
+                  </h2>
+                  <svg class="start-screen__title-img">
+                    <use xlink:href="img/sprite.svg#title"></use>
+                  </svg>
+                  <p class="start-screen__slogan">
+                    Медицинский диагностический центр
+                  </p>
+                  <p class="start-screen__content">
+                    Cпециализируется на проведении исследований для постановки диагноза по 15 медицинским направлениям с
+                    помощью современного оборудования. Прием пациентов осуществляют врачи высшей, первой категорий
+                    квалификации, прошедшие обучение в клиниках Украины и за рубежом.
+                  </p>
+                  <a href="#" class="start-screen-contact-us__btn btn">
+                    Связвться с нами
+                  </a>
+                </div>
               </div>
-              <div class="present__form-wrapper-inner present__form-wrapper-inner--to">
-                <input type="text" class="present__text-input form__text-input" placeholder="Куда">
-                <select class="present__form-select form__select">
-                  <option class="present__select-option form__option" value="start">
-                    В регион
-                  </option>
-                  <option class="present__select-option form__option" value="town">
-                    Харьков
-                  </option>
-                </select>
-                <select class="present__form-select form__select">
-                  <option class="present__select-option form__option" value="start">
-                    В федеральный округ
-                  </option>
-                  <option class="present__select-option form__option" value="region">
-                    Харьковский
-                  </option>
-                </select>
+              <div class="start-screen__slide">
+                <div class="start-screen__slide-wrapper-inner">
+                  <h2 class="start-screen__title vis-hidd">
+                    Север
+                  </h2>
+                  <svg class="start-screen__title-img">
+                    <use xlink:href="img/sprite.svg#title"></use>
+                  </svg>
+                  <p class="start-screen__slogan">
+                    Медицинский диагностический центр
+                  </p>
+                  <p class="start-screen__content">
+                    Cпециализируется на проведении исследований для постановки диагноза по 15 медицинским направлениям с
+                    помощью современного оборудования. Прием пациентов осуществляют врачи высшей, первой категорий
+                    квалификации, прошедшие обучение в клиниках Украины и за рубежом.
+                  </p>
+                  <a href="#" class="start-screen-contact-us__btn btn">
+                    Связвться с нами
+                  </a>
+                </div>
+              </div>
+              <div class="start-screen__slide">
+                <div class="start-screen__slide-wrapper-inner">
+                  <h2 class="start-screen__title vis-hidd">
+                    Север
+                  </h2>
+                  <svg class="start-screen__title-img">
+                    <use xlink:href="img/sprite.svg#title"></use>
+                  </svg>
+                  <p class="start-screen__slogan">
+                    Медицинский диагностический центр
+                  </p>
+                  <p class="start-screen__content">
+                    Cпециализируется на проведении исследований для постановки диагноза по 15 медицинским направлениям с
+                    помощью современного оборудования. Прием пациентов осуществляют врачи высшей, первой категорий
+                    квалификации, прошедшие обучение в клиниках Украины и за рубежом.
+                  </p>
+                  <a href="#" class="start-screen-contact-us__btn btn">
+                    Связвться с нами
+                  </a>
+                </div>
               </div>
             </div>
-            <div class="form__fieldset present__fieldset present__fieldset--weight">
-              <h5 class="form__legend vis-hidd">Вес Объём груза</h5>
-              <div class="present__form-wrapper-inner present__form-wrapper-inner--from">
-                <input type="text" class="present__text-input form__text-input" placeholder="Вес от, т">
-                <input type="text" class="present__text-input form__text-input" placeholder="до">
+          </div>
+          <div class="col-md-12">
+            <div class="start-screen__info">
+              <div class="start-screen__info-wrapper">
+                <div class="start-screen__analyzes">
+                  <b class="start-screen__analyzes-slogan">
+                    <svg class="start-screen__icon">
+                      <use xlink:href="img/sprite.svg#heart-icon"></use>
+                    </svg>
+                    50% скидка на анализ <span>COVID- 19</span>
+                  </b>
+                  <p class="start-screen__analyzes-txt">
+                    Приди на прием к врачу терапевту и получи скидку на анализ COVID- 19 на наличие Антител
+                  </p>
+                  <p class="start-screen__telephone">
+                    <svg class="start-screen__icon">
+                      <use xlink:href="img/sprite.svg#telephone-icon"></use>
+                    </svg>
+                    <a href="tel:+380976660966" class="start-screen__telephone-link">
+                      097 666-09-66;
+                    </a>
+                    <a href="tel:+380687442929" class="start-screen__telephone-link">
+                      068 744-29-29
+                    </a>
+                  </p>
+                  <p class="start-screen__mail">
+                    <svg class="start-screen__icon">
+                      <use xlink:href="img/sprite.svg#email-icon"></use>
+                    </svg>
+                    <a href="mailto:mdcsever18@gmail.com" class="start-screen__mail-link">
+                      mdcsever18@gmail.com
+                    </a>
+                  </p>
+                </div>
               </div>
-              <div class="present__form-wrapper-inner present__form-wrapper-inner--to">
-                <input type="text" class="present__text-input form__text-input" placeholder="Объём от, м.куб">
-                <input type="text" class="present__text-input form__text-input" placeholder="до">
+              <div class="start-screen__info-wrapper">
+                <b class="start-screen__work-time-slogan">
+                  <svg class="start-screen__icon">
+                    <use xlink:href="img/sprite.svg#clock-icon"></use>
+                  </svg>
+                  Часы работы:
+                </b>
+                <p class="start-screen__work-time-txt">
+                  Ждём вас по адресу: г. Кривой Рог, ул. Ухтомского 5А<br>
+                  (СевГок, ост.Пляжная)
+                </p>
+                <table class="start-screen__work-time-table">
+                  <tr>
+                    <td>Пн-Пт</td>
+                    <td>8:00 - 18:00</td>
+                  </tr>
+                  <tr>
+                    <td>Сб</td>
+                    <td>8:00 - 13:00</td>
+                  </tr>
+                </table>
               </div>
             </div>
-            <div class="form__fieldset present__fieldset present__fieldset--type">
-              <h5 class="form__legend vis-hidd">Тип транспорта и груза</h5>
-              <select class="present__form-select form__select">
-                <option class="present__select-option form__option" value="start">
-                  Тип транспорта
-                </option>
-                <option class="present__select-option form__option" value="type-track">
-                  какой-то тип
-                </option>
-              </select>
-              <select class="present__form-select form__select">
-                <option class="present__select-option form__option" value="start">
-                  Тип загрузки
-                </option>
-                <option class="present__select-option form__option" value="type-loading">
-                  какой-то тип
-                </option>
-              </select>
-            </div>
-            <div class="present__form-btn-wrapper">
-              <button type="reset" class="present__form-btn-reset btn btn--transparent">Сбросить фильтры</button>
-              <button type="button" class="present__form-filter-mobile-btn">
-                Фильтры (выбрано <span>3</span> параметра)
-              </button>
-              <button type="submit" class="present__form-btn-submit btn btn--brown">Показать предложения <span>10 324</span></button>
-            </div>
-            <button type="button" class="present__form-btn-close">Закрыть</button>
-          </form>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="search-result">
-      <div class="search-result__wrapper container">
-        <div class="search-result__controls">
-          <div class="search-result__title-wrapper">
-            <b class="search-result__title">Результаты поиска</b>
-            <span class="search-result__count">10 324</span>
-          </div>
-          <div class="search-result__sort">
-            <span>фильтр:</span>
-            <select class="present__form-select form__select">
-              <option class="present__select-option form__option" value="start">
-                Дате добавления
-              </option>
-              <option class="present__select-option form__option" value="type-track">
-                Сортировать по грузу
-              </option>
-            </select>
-          </div>
-          <a href="#" class="search-result__add-btn btn btn--brown">Добавить груз</a>
-        </div>
-        <div class="search-result__list">
-          <div class="search-result__list-item result-item">
-            <a href="#" class="result-item__favorite result-item__favorite--active"></a>
-            <div class="result-item__top-wrapper">
-              <div class="result-item__title-wrapper">
-                <p class="result-item__number">0065536</p>
-                <b class="result-item__title">
-                  Продкуты молочные
-                </b>
-              </div>
-              <div class="result-item__price-wrapper">
-                <div class="result-item__price result-item__price--nds">
-                  <span class="result-item__price-txt">с НДС</span>
-                  <span class="result-item__price-amount result-item__price-amount--rub">23 876</span>
-                </div>
-                <div class="result-item__price result-item__price--no-nds">
-                  <span class="result-item__price-txt">без НДС</span>
-                  <span class="result-item__price-amount result-item__price-amount--rub">23 876</span>
-                </div>
-              </div>
-            </div>
-            <div class="result-item__bottom-wrapper">
-              <div class="result-item__inner-wrapper">
-                <div class="result-item__location-wrapper">
-                  <div class="result-item__icons">
-                    <div class="result-item__decor"></div>
-                  </div>
-                  <div class="result-item__town-wrapper result__item-town-wrapper--form">
-                    <div class="result-item__date">
-                      24.03.20 09:00 (МСК)
-                    </div>
-                    <b class="result-item__town">Саратов</b>
-                    <span class="result-item__region">Саратовская область</span>
-                  </div>
-                  <div class="result-item__town-wrapper result__item-town-wrapper--to">
-                    <div class="result-item__date">
-                      24.03.20 09:00 (МСК)
-                    </div>
-                    <b class="result-item__town">Саратов</b>
-                    <span class="result-item__region">Саратовская область</span>
-                  </div>
-                </div>
-                <div class="result-item__car-count-wrapper">
-                  <span class="result-item__car-count-txt">Требуется автомобилей</span>
-                  <span class="result-item__car-count">2</span>
-                </div>
-              </div>
-              <div class="result-item__inner-wrapper">
-                <div class="result-item__customer">
-                  <img src="./img/user-icon.png" height="33" width="33" class="result-item__customer-icon" alt="user-icon">
-                  <div class="result-item__customer-wrapper">
-                    <span class="result-item__customer-txt">Заказчик</span>
-                    <a href="cargo-owner-profile.html" class="result-item__customer-name"> ООО Закачик ИП</a>
-                  </div>
-                </div>
-                <div class="result-item__payment">
-                  <img src="./img/user-icon.png" height="33" width="33" class="result-item__payment-icon" alt="user-icon">
-                  <div class="result-item__payment-wrapper">
-                    <span class="result-item__payment-txt">Оплата</span>
-                    <p class="result-item__payment-date"> 23.09.20 09:00 (МСК)</p>
-                  </div>
-                </div>
-                <div class="result-item__chat-wrapper">
-                  <a href="#" class="result-item__chat">Чат с заказчиком</a>
-                </div>
-              </div>
-              <a href="#" class="result-item__btn btn btn--brown">
-                <span class="result-item__btn-no-bargain">Согласен без торга</span>
-                <span class="result-item__btn-bargain">Начать торги</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="search-result__list-item result-item">
-            <a href="#" class="result-item__favorite"></a>
-            <div class="result-item__top-wrapper">
-              <div class="result-item__title-wrapper">
-                <p class="result-item__number">0065536</p>
-                <b class="result-item__title">
-                  Овощи фрукты
-                </b>
-              </div>
-              <div class="result-item__price-wrapper">
-                <div class="result-item__price result-item__price--nds">
-                  <span class="result-item__price-txt">с НДС</span>
-                  <span class="result-item__price-amount result-item__price-amount--rub">23 876</span>
-                </div>
-                <div class="result-item__price result-item__price--no-nds">
-                  <span class="result-item__price-txt">без НДС</span>
-                  <span class="result-item__price-amount result-item__price-amount--rub">23 876</span>
-                </div>
-              </div>
-            </div>
-            <div class="result-item__bottom-wrapper">
-              <div class="result-item__inner-wrapper">
-                <div class="result-item__location-wrapper">
-                  <div class="result-item__icons">
-                    <div class="result-item__decor"></div>
-                  </div>
-                  <div class="result-item__town-wrapper result__item-town-wrapper--form">
-                    <div class="result-item__date">
-                      24.03.20 09:00 (МСК)
-                    </div>
-                    <b class="result-item__town">Саратов</b>
-                    <span class="result-item__region">Саратовская область</span>
-                  </div>
-                  <div class="result-item__town-wrapper result__item-town-wrapper--to">
-                    <div class="result-item__date">
-                      24.03.20 09:00 (МСК)
-                    </div>
-                    <b class="result-item__town">Саратов</b>
-                    <span class="result-item__region">Саратовская область</span>
-                  </div>
-                </div>
-                <div class="result-item__car-count-wrapper">
-                  <span class="result-item__car-count-txt">Требуется автомобилей</span>
-                  <span class="result-item__car-count">2</span>
-                </div>
-              </div>
-              <div class="result-item__inner-wrapper">
-                <div class="result-item__customer">
-                  <img src="./img/user-icon.png" height="33" width="33" class="result-item__customer-icon" alt="user-icon">
-                  <div class="result-item__customer-wrapper">
-                    <span class="result-item__customer-txt">Заказчик</span>
-                    <a href="cargo-owner-profile.html" class="result-item__customer-name"> ООО Закачик ИП</a>
-                  </div>
-                </div>
-                <div class="result-item__payment">
-                  <img src="./img/user-icon.png" height="33" width="33" class="result-item__payment-icon" alt="user-icon">
-                  <div class="result-item__payment-wrapper">
-                    <span class="result-item__payment-txt">Оплата</span>
-                    <p class="result-item__payment-date"> 23.09.20 09:00 (МСК)</p>
-                  </div>
-                </div>
-                <div class="result-item__chat-wrapper">
-                  <a href="#" class="result-item__chat">Чат с заказчиком</a>
-                </div>
-              </div>
-              <a href="#" class="result-item__btn result-item__btn--no-bargain btn btn--brown">
-                <span class="result-item__btn-no-bargain">Согласен без торга</span>
-                <span class="result-item__btn-bargain">Начать торги</span>
-              </a>
-            </div>
-            <p class="result-item__step">Шаг <span>500</span></p>
+    </div>
+    <div class="staff">
+      <div class="container">
+        <div class="row">
+          <div class="staff__title-wrapper title-shadow">
+            <h3 class="title-shadow__title-text">
+              Наши врачи
+            </h3>
+            <p class="title-shadow__shadow-text">
+              Наши врачи
+            </p>
           </div>
         </div>
-        <div class="search-result__pagination pagination">
-          <ul class="pagination__list">
-            <li class="pagination__list-item pagination__list-item--prew">
-              <a href="#" class="pagination__list-link">
-                <img src="./img/pagination-prew-arrow.png" width="15px" height="14px" alt="prew-icon" class="pagination__list-link-icon">
-              </a>
+        <div class="row">
+          <ul class="staff__list">
+            <li class="staff__list-item">
+              <img src="img/photo.png" height="80px" width="80px" alt="photo" class="staff__photo">
+              <b class="staff__profession">
+                Нефролог
+              </b>
+              <p class="staff__name">
+                Пенкель Татьяна
+              </p>
+              <p class="staff__status">
+                Высшая категория, cтаж работы 30 лет
+              </p>
+              <p class="staff__dscr">
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в... Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+              </p>
+              <button class="staff__more">
+                Подробнее
+                <svg class="staff__icon">
+                  <use xlink:href="img/sprite.svg#right-arrow-icon"></use>
+                </svg>
+              </button>
             </li>
-            <li class="pagination__list-item pagination__list-item--active">
-              <a href="#" class="pagination__list-link">
-                1
-              </a>
+            <li class="staff__list-item">
+              <img src="img/photo.png" height="80px" width="80px" alt="photo" class="staff__photo">
+              <b class="staff__profession">
+                Нефролог
+              </b>
+              <p class="staff__name">
+                Пенкель Татьяна
+              </p>
+              <p class="staff__status">
+                Высшая категория, cтаж работы 30 лет
+              </p>
+              <p class="staff__dscr">
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в... Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+              </p>
+              <button class="staff__more">
+                Подробнее
+                <svg class="staff__icon">
+                  <use xlink:href="img/sprite.svg#right-arrow-icon"></use>
+                </svg>
+              </button>
             </li>
-            <li class="pagination__list-item">
-              <a href="#" class="pagination__list-link">
-                2
-              </a>
+            <li class="staff__list-item">
+              <img src="img/photo.png" height="80px" width="80px" alt="photo" class="staff__photo">
+              <b class="staff__profession">
+                Нефролог
+              </b>
+              <p class="staff__name">
+                Пенкель Татьяна
+              </p>
+              <p class="staff__status">
+                Высшая категория, cтаж работы 30 лет
+              </p>
+              <p class="staff__dscr">
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в... Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+              </p>
+              <button class="staff__more">
+                Подробнее
+                <svg class="staff__icon">
+                  <use xlink:href="img/sprite.svg#right-arrow-icon"></use>
+                </svg>
+              </button>
             </li>
-            <li class="pagination__list-item">
-              <a href="#" class="pagination__list-link">
-                3
-              </a>
+            <li class="staff__list-item">
+              <img src="img/photo.png" height="80px" width="80px" alt="photo" class="staff__photo">
+              <b class="staff__profession">
+                Нефролог
+              </b>
+              <p class="staff__name">
+                Пенкель Татьяна
+              </p>
+              <p class="staff__status">
+                Высшая категория, cтаж работы 30 лет
+              </p>
+              <p class="staff__dscr">
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в... Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+              </p>
+              <button class="staff__more">
+                Подробнее
+                <svg class="staff__icon">
+                  <use xlink:href="img/sprite.svg#right-arrow-icon"></use>
+                </svg>
+              </button>
             </li>
-            <li class="pagination__list-item pagination__list-item--dotted">
-              <a href="#" class="pagination__list-link">
-                ...
-              </a>
+            <li class="staff__list-item">
+              <img src="img/photo.png" height="80px" width="80px" alt="photo" class="staff__photo">
+              <b class="staff__profession">
+                Нефролог
+              </b>
+              <p class="staff__name">
+                Пенкель Татьяна
+              </p>
+              <p class="staff__status">
+                Высшая категория, cтаж работы 30 лет
+              </p>
+              <p class="staff__dscr">
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в... Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+              </p>
+              <button class="staff__more">
+                Подробнее
+                <svg class="staff__icon">
+                  <use xlink:href="img/sprite.svg#right-arrow-icon"></use>
+                </svg>
+              </button>
             </li>
-            <li class="pagination__list-item">
-              <a href="#" class="pagination__list-link">
-                15
-              </a>
-            </li>
-            <li class="pagination__list-item pagination__list-item--prew">
-              <a href="#" class="pagination__list-link">
-                <img src="./img/pagination-next-arrow.png" width="15px" height="14px" alt="next-icon" class="pagination__list-link-icon">
-              </a>
+            <li class="staff__list-item">
+              <img src="img/photo.png" height="80px" width="80px" alt="photo" class="staff__photo">
+              <b class="staff__profession">
+                Нефролог
+              </b>
+              <p class="staff__name">
+                Пенкель Татьяна
+              </p>
+              <p class="staff__status">
+                Высшая категория, cтаж работы 30 лет
+              </p>
+              <p class="staff__dscr">
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Нефриты разной этиологии.
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+                Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в... Опущение почки.
+                Почечную колику.
+                Почечную недостаточность в...
+              </p>
+              <button class="staff__more">
+                Подробнее
+                <svg class="staff__icon">
+                  <use xlink:href="img/sprite.svg#right-arrow-icon"></use>
+                </svg>
+              </button>
             </li>
           </ul>
-          <div class="pagination__sort-wrapper">
-            <span class="pagination__sort-txt">Показывать по:</span>
-            <select class="pagination__select">
-              <option class="pagination__option" value="5">
-                5
-              </option>
-              <option class="pagination__option" value="10">
-                10
-              </option>
-            </select>
+        </div>
+      </div>
+    </div>
+    <div class="why-we">
+      <div class="container">
+        <div class="row">
+          <div class="why-we__wrapper">
+            <div class="why-we__info">
+              <b class="why-we__title">Почему мы ?</b>
+              <ul class="why-we__list">
+                <li class="why-we__list-item">
+                  <div class="why-we__icon-wrapper">
+                    <svg class="why-we__icon">
+                      <use xlink:href="img/sprite.svg#brain-icon"></use>
+                    </svg>
+                  </div>
+                  <b class="why-we__list-bold-txt">
+                    Комплексный прием
+                  </b>
+                  <p class="why-we__list-small-txt">
+                    Консультация 15 специалистов в пределах одного центра!
+                  </p>
+                </li>
+                <li class="why-we__list-item">
+                  <div class="why-we__icon-wrapper">
+                    <svg class="why-we__icon">
+                      <use xlink:href="img/sprite.svg#first-aid-icon"></use>
+                    </svg>
+                  </div>
+                  <b class="why-we__list-bold-txt">
+                    Диагностическая база
+                  </b>
+                  <p class="why-we__list-small-txt">
+                    Персонал с практическим опытом работы как в поликлиниках так и в стационарных условиях, аттестация.
+                    <br>
+                    Инструментальная диагностика от всемирных брендов.
+                  </p>
+                </li>
+                <li class="why-we__list-item">
+                  <div class="why-we__icon-wrapper">
+                    <svg class="why-we__icon">
+                      <use xlink:href="img/sprite.svg#flask-icon"></use>
+                    </svg>
+                  </div>
+                  <b class="why-we__list-bold-txt">
+                    Собственная лаборатория
+                  </b>
+                  <p class="why-we__list-small-txt">
+                    Непосредственно в медицинском центре работает лаборатория, также принимаются Бак-анализы. Это дает
+                    возможность после приема врача и его направления сразу сдать анализы не выходя с центра.
+                  </p>
+                </li>
+                <li class="why-we__list-item">
+                  <div class="why-we__icon-wrapper">
+                    <svg class="why-we__icon">
+                      <use xlink:href="img/sprite.svg#home-icon"></use>
+                    </svg>
+                  </div>
+                  <b class="why-we__list-bold-txt">
+                    Дневной стационар
+                  </b>
+                  <p class="why-we__list-small-txt">
+                    Дневной стационар сочетает высокий уровень сервиса с меньшими затратами
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="why-we__form-wrapper">
+              <div class="why-we__form">
+                <b class="why-we__form-title">
+                  Напишите нам
+                </b>
+                <p class="why-we__form-txt">
+                  Оставьте свои контакты и мы перезвоним в удобное для вас время.
+                </p>
+                <input type="text" class="why-we__input" placeholder="Имя">
+                <input type="text" class="why-we__input" placeholder="Телефон">
+                <input type="text" class="why-we__input" placeholder="Когда вам удобно презвонить?">
+                <textarea class="why-we__textarea" placeholder="Ваши комментарии"></textarea>
+                <button class="why-we__btn">Отправить</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+    <div class="reviews">
+      <div class="container">
+        <div class="row">
+          <div class="reviews__title-wrapper title-shadow">
+            <h3 class="title-shadow__title-text">
+              Что о нас говорят
+            </h3>
+            <p class="title-shadow__shadow-text">
+              Что о нас говорят
+            </p>
+          </div>
+          <div class="reviews__slider">
+            <div class="reviews__slide">
+              <div class="rewiews__slide-wrapper">
+                <img src="./img/photo.png" height="80" width="80" alt="alt" class="rewiews__slide-img">
+                <b class="rewiews__name">
+                  Вероника Тргеньева
+                </b>
+                <p class="rewiews__profession">
+                  Артдиректор DiAgecy
+                </p>
+                <p class="reviews__txt">
+                  В клинике был первый раз. Чисто, аккуратно, вежливый персонал. Визит оставил положительное
+                  впечатление. Понравилось, что приехал раньше и сразу попал на приём. Все прошло на высшем уровне.
+                </p>
+              </div>
+            </div>
+            <div class="reviews__slide">
+              <div class="rewiews__slide-wrapper">
+                <img src="./img/photo.png" height="80" width="80" alt="alt" class="rewiews__slide-img">
+                <b class="rewiews__name">
+                  Вероника Тргеньева
+                </b>
+                <p class="rewiews__profession">
+                  Артдиректор DiAgecy
+                </p>
+                <p class="reviews__txt">
+                  В клинике был первый раз. Чисто, аккуратно, вежливый персонал. Визит оставил положительное
+                  впечатление. Понравилось, что приехал раньше и сразу попал на приём. Все прошло на высшем уровне.
+                </p>
+              </div>
+            </div>
+            <div class="reviews__slide">
+              <div class="rewiews__slide-wrapper">
+                <img src="./img/photo.png" height="80" width="80" alt="alt" class="rewiews__slide-img">
+                <b class="rewiews__name">
+                  Вероника Тргеньева
+                </b>
+                <p class="rewiews__profession">
+                  Артдиректор DiAgecy
+                </p>
+                <p class="reviews__txt">
+                  В клинике был первый раз. Чисто, аккуратно, вежливый персонал. Визит оставил положительное
+                  впечатление. Понравилось, что приехал раньше и сразу попал на приём. Все прошло на высшем уровне.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map">
+      <div class="container">
+        <div class="row">
+          <div class="map__info">
+            <img src="./img/logo.png" alt="logo" class="map__info-logo">
+            <a href="https://www.google.com/maps/place/%D1%83%D0%BB.+%D0%A3%D1%85%D1%82%D0%BE%D0%BC%D1%81%D0%BA%D0%BE%D0%B3%D0%BE,+5,+%D0%9A%D1%80%D0%B8%D0%B2%D0%BE%D0%B9+%D0%A0%D0%BE%D0%B3,+%D0%94%D0%BD%D0%B5%D0%BF%D1%80%D0%BE%D0%BF%D0%B5%D1%82%D1%80%D0%BE%D0%B2%D1%81%D0%BA%D0%B0%D1%8F+%D0%BE%D0%B1%D0%BB%D0%B0%D1%81%D1%82%D1%8C,+50000/@48.1398604,33.5687825,17z/data=!3m1!4b1!4m5!3m4!1s0x40dafcf6c27f13ed:0x98580c596dfa06d8!8m2!3d48.1398604!4d33.5709712" class="map__link">
+              Смотреть на Google Maps
+              <svg class="map__icon">
+                <use xlink:href="img/sprite.svg#right-arrow-icon"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="footer">
-    <div class="footer__wrapper-top container">
-      <div class="footer__main">
-        <div class="footer__wrapper-inner">
-          <a href="index.html" class="footer__logo">
-            <img src="./img/logo.png" width="133" height="33" alt="footer-logo" class="footer__logo-img">
-            <b class="footer__logo-txt">Грузоперевозки по Росии</b>
+    <div class="footer__wrapper">
+      <ul class="footer__soc-list">
+        <li class="footer__soc-list-item">
+          <a href="#" class="footer__soc-list-link">
+            <svg class="footer__soc-icon">
+              <use xlink:href="img/sprite.svg#fb-icon"></use>
+            </svg>
           </a>
-          <a href="#" class="footer__rkn-logo">
-            <img src="./img/zpd-rkn.png" width="196" height="22" alt="header-logo" class="footer__rkn-logo-img">
-            <span class="footer__rkn-txt">Свидетельство о регистрации
-              организации</span>
+        </li>
+        <li class="footer__soc-list-item">
+          <a href="#" class="footer__soc-list-link">
+            <svg class="footer__soc-icon">
+              <use xlink:href="img/sprite.svg#odnoklassniki-icon"></use>
+            </svg>
           </a>
-        </div>
-        <div class="footer__wrapper-inner">
-          <h3 class="footer__list-title">Карта сайта</h3>
-          <ul class="footer__list">
-            <li class="footer__list-item">
-              <a href="index.html" class="footer__list-link">Главная</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="cargo-owners.html" class="footer__list-link">Грузовладельци</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="about-project.html" class="footer__list-link">О проекте</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Правила</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="faq.html" class="footer__list-link">Вопросы</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Страховой фонд НС</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="vacancies.html" class="footer__list-link">Вакансии</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="contacts.html" class="footer__list-link">Контакты</a>
-            </li>
-          </ul>
-          <a class="footer__rkn-logo">
-            <img src="./img/zpd-rkn.png" width="196" height="22" alt="header-logo" class="footer__rkn-logo-img">
-            <span class="footer__rkn-txt">Свидетельство о регистрации
-              организации</span>
+        </li>
+        <li class="footer__soc-list-item">
+          <a href="#" class="footer__soc-list-link">
+            <svg class="footer__soc-icon">
+              <use xlink:href="img/sprite.svg#vk-icon"></use>
+            </svg>
           </a>
-        </div>
-        <div class="footer__wrapper-inner">
-          <h3 class="footer__list-title">Услуги</h3>
-          <ul class="footer__list">
-            <li class="footer__list-item">
-              <a href="partners.html" class="footer__list-link">Партнёры</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="bookkeeping.html" class="footer__list-link">Бухгалтерия, ЭДО</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Кредиты, лизинг</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Для банков</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Страховые компании</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Автосервисы</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Запчасти</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Покупка и продажа авто</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Топливные компании</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Аналитика</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Контроль и учёт зап. частей</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Инвестиции</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Факторинг</a>
-            </li>
-            <li class="footer__list-item">
-              <a href="#" class="footer__list-link">Мониторинг транспорта по GPS</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__social">
-        <ul class="footer__social-list">
-          <li class="footer__social-list-item">
-            <a href="#" class="footer__social-list-link footer__social-list-link--youtube">
-              <span class="vis-hidd">youtube</span>
-            </a>
-          </li>
-          <li class="footer__social-list-item">
-            <a href="#" class="footer__social-list-link footer__social-list-link--instagram">
-              <span class="vis-hidd">instagram</span>
-            </a>
-          </li>
-          <li class="footer__social-list-item">
-            <a href="#" class="footer__social-list-link footer__social-list-link--vkontakte">
-              <span class="vis-hidd">vkontakte</span>
-            </a>
-          </li>
-          <li class="footer__social-list-item">
-            <a href="#" class="footer__social-list-link footer__social-list-link--facebook">
-              <span class="vis-hidd">facebook</span>
-            </a>
-          </li>
-        </ul>
-        <div class="footer__telegramm">
-          <a href="https://t.me/nsinfosu" class="footer__telegramm-link">
-            <img src="./img/telegram_icon.png" height="32px" width="32px" title="telegram-icon" alt="telegram-icon" class="footer__telegramm-icon">
-            <span class="footer__telegramm-txt"> Напишите нам в телеграмм</span>
+        </li>
+        <li class="footer__soc-list-item">
+          <a href="#" class="footer__soc-list-link">
+            <svg class="footer__soc-icon">
+              <use xlink:href="img/sprite.svg#twit-icon"></use>
+            </svg>
           </a>
-        </div>
-        <div class="footer__email">
-          <span class="footer__email-txt">E-mail:</span>
-          <a href="mailto:info@nsinfo.su" class="footer__email-link">info@nsinfo.su</a>
-        </div>
-      </div>
-    </div>
-    <div class="footer__wrapper-bottom container">
-      <span class="footer__rights">2020 © Все права защищены</span>
-      <a href="#" class="footer__confidentiality">Политика конфиденциальности</a>
+        </li>
+        <li class="footer__soc-list-item">
+          <a href="#" class="footer__soc-list-link">
+            <svg class="footer__soc-icon">
+              <use xlink:href="img/sprite.svg#inst-icon"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="footer__txt">
+        Sever© 2020. All rights reserved
+      </p>
     </div>
   </footer>
+  <div class="pop-up">
+    <button class="pop-up__btn-close">
+      <svg class="pop-up__close-icon">
+        <use xlink:href="img/sprite.svg#close-icon"></use>
+      </svg>
+    </button>
+    <b class="pop-up__title">
+      Связаться с нами
+    </b>
+    <p class="pop-up__form-txt">
+      Оставьте свои контакты и мы перезвоним в удобное для вас время.
+    </p>
+    <form class="pop-up__form">
+      <input type="text" class="pop-up__input" placeholder="Имя">
+      <input type="text" class="pop-up__input" placeholder="Телефон">
+      <input type="text" class="pop-up__input" placeholder="Когда вам удобно перезвонить?">
+      <textarea type="text" class="pop-up__textarea" placeholder="Ваши комментарии"></textarea>
+      <button class="pop-up__btn">Отправить</button>
+    </form>
+  </div>
   <script src="./js/jquery-3.5.1.min.js"></script>
-  <script src="./select2/dist/js/select2.min.js"></script>
   <script src="./slick/slick.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
