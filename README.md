@@ -1,1 +1,1 @@
-https://antpzk90.github.io/sever/
+https://antpzk90.github.io/mebli/
