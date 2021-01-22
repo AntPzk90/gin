@@ -159,3 +159,27 @@ $('.catalog-card__btn--plus').click(function () {
 $('.catalog-card__btn--minus').click(function () {
   Counter.minusHandler();
 });
+
+let CounterCart = {
+  count: 0,
+  textContainer: $('.cart__input'),
+  plusHandler: function () {
+    this.count++;
+    this.textContainer.val(this.count);
+  },
+  minusHandler: function () {
+    this.count--;
+    if (this.count <= 0) {
+      this.count = 0;
+    }
+    this.textContainer.val(this.count);
+  }
+}
+
+$('.cart__btn--plus').click(function () {
+  CounterCart.plusHandler();
+});
+
+$('.cart__btn--minus').click(function () {
+  CounterCart.minusHandler();
+});
