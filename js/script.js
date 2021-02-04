@@ -183,3 +183,7 @@ $('.cart__btn--plus').click(function () {
 $('.cart__btn--minus').click(function () {
   CounterCart.minusHandler();
 });
+
+$('.personal-area__filters-btn').click(function() {
+  $('.side-bar').fadeToggle();
+});
